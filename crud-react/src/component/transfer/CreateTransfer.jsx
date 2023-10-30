@@ -224,7 +224,7 @@ export default function CreateTransfer() {
                     block="block"
                     type="submit"
                   >
-                    Create
+                    Save
                   </Button>
                 </Form>
               </div>

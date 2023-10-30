@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
 import Swal from "sweetalert2";
 import axios from "axios";
@@ -44,11 +43,12 @@ export default function ListTransfer() {
     <div className="container">
       <div className="row">
         <div className="col-12">
+          <span className="display-6 fw-bold">Transfer List</span>
           <Link
-            className="btn btn-primary mb-2 float-end"
+            className="btn btn-outline-dark mb-2 float-end"
             to={"/transfers/create"}
           >
-            Create Passenger
+            Create Transfer
           </Link>
         </div>
         <div className="col-12">
@@ -95,7 +95,7 @@ export default function ListTransfer() {
                                 text: "You won't be able to revert this!",
                                 icon: "warning",
                                 showCancelButton: true,
-                                confirmButtonColor: "#3085d6",
+                                confirmButtonColor: "#218838",
                                 cancelButtonColor: "#d33",
                                 confirmButtonText: "Yes, delete it!",
                               }).then((result) => {

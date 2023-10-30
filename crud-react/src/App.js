@@ -8,14 +8,15 @@ import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import Header from "./component/Header & Footer/Header";
+import Footer from "./component/Header & Footer/Footer"
 
 import EditProduct from "./component/product/edit.component";
 import ProductList from "./component/product/list.component";
 import CreateProduct from "./component/product/create.component";
 
-import EditPassenger from "./component/passanger/EditPassenger";
-import ListPassenger from "./component/passanger/ListPassenger";
-import CreatePassenger from "./component/passanger/CreatePassenger";
+import EditPassenger from "./component/passenger/EditPassenger";
+import ListPassenger from "./component/passenger/ListPassenger";
+import CreatePassenger from "./component/passenger/CreatePassenger";
 
 import EditCar from "./component/car/EditCar";
 import ListCar from "./component/car/ListCar";
@@ -35,10 +36,7 @@ function App() {
         <Row>
           <Col md={12}>
             <Routes>
-              <Route path="/" element={<ProductList />} />
-              <Route path="/product/create" element={<CreateProduct />} />
-              <Route path="/product/edit/:id" element={<EditProduct />} />
-              <Route path="/products" element={<ProductList />} />
+              <Route path="/" element={<ListTransfer />} />
 
               <Route path="/passengers/create" element={<CreatePassenger />} />
               <Route path="/passengers/edit/:id" element={<EditPassenger />} />
@@ -55,6 +53,8 @@ function App() {
           </Col>
         </Row>
       </Container>
+
+      <Footer/>
     </Router>
   );
 }

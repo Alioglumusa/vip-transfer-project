@@ -23,7 +23,7 @@ export default function ListCar() {
       text: "You won't be able to revert this!",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
+      confirmButtonColor: "#218838",
       cancelButtonColor: "#d33",
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
@@ -55,7 +55,8 @@ export default function ListCar() {
     <div className="container">
       <div className="row">
         <div className="col-12">
-          <Link className="btn btn-primary mb-2 float-end" to={"/cars/create"}>
+        <span className="display-6 fw-bold">Car List</span>
+          <Link className="btn btn-outline-dark mb-2 float-end" to={"/cars/create"}>
             Create Car
           </Link>
         </div>
